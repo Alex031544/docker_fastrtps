@@ -1,0 +1,6 @@
+struct Structure
+{
+    octet octet_value;
+    long long_value;
+    string string_value;
+};

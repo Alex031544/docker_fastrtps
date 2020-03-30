@@ -1,0 +1,32 @@
+ARG TAG_FASTRTPS='v1.9.4'
+
+FROM fastrtps:${TAG_FASTRTPS}-dev AS builder
+
+COPY proj /opt/proj
+
+WORKDIR /opt/proj
+
+RUN mkdir /opt/gen
+RUN fastrtpsgen -example CMake -d /opt/gen *.idl
+
+WORKDIR /opt/build
+RUN cmake /opt/gen/ \
+		-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE && \
+	cmake --build . -j 16
+
+
+### APPLICATION #######################################
+
+FROM fastrtps:${TAG_FASTRTPS} AS app
+
+# the example application takes on argument, which can either be
+# 'publisher' or 'subscriber'. The default is set to 'subscriber'.
+ENV TYPE='subscriber'
+
+COPY --from=builder \
+	/opt/build/demo \
+	/usr/local/bin/
+
+WORKDIR /opt
+
+CMD ["sh", "-c", "demo ${TYPE}"]
