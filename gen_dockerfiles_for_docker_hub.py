@@ -13,9 +13,13 @@ class BuildTarget:
 def get_dependencies(targets_available, depends):
     col = depends
     for d in depends:
-        tad = list(filter(lambda ta: d in ta.name, targets_available))
+        tad = []
+        for ta in targets_available:
+            if d == ta.name:
+                tad.extend(ta.depends)
+                break
         if tad:
-            col.extend(get_dependencies(targets_available, tad[0].depends))
+            col.extend(get_dependencies(targets_available, tad))
     col = set(col)
     return col
 
@@ -52,13 +56,13 @@ for line in dockerfileLines:
 targets.append(buildTarget)
 
 
-for target in targets:
-    print('Target: %s' % target.name)
-    target.depends = set(target.depends)
-    target.depends = list(filter(lambda s: '$' not in s, target.depends))
-    print('depends on: %s' % target.depends)
-    print(target.block)
-    print('------------')
+# for target in targets:
+#     print('Target: %s' % target.name)
+#     target.depends = set(target.depends)
+#     target.depends = list(filter(lambda s: '$' not in s, target.depends))
+#     print('depends on: %s' % target.depends)
+#     print(target.block)
+#     print('------------')
 
 
 def wlines(file, listoflines):
@@ -73,6 +77,8 @@ if not os.path.exists('./dockerhub'):
 
 for target in dockerhubTargets:
     dep_list = get_dependencies(targets, [target])
+    print('Target: %s' % target)
+    print('Dependencies:\n\t%s' % dep_list)
 
     with open(os.path.join('./dockerhub', "Dockerfile.%s" % target), "w") as f:
         f.writelines([

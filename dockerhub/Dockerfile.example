@@ -179,6 +179,43 @@ ENV PATH="/usr/local/share/fastrtpsgen/scripts:${PATH}"
 
 
 ################################################################################
+FROM debian:${TAG_DEBIAN} AS runtime
+
+RUN apt-get update && \
+	apt-get install -y \
+		libtinyxml2-6 \
+		libssl1.1
+
+COPY --from=builder \
+	/usr/local/lib/libfastcdr.so* \
+	/usr/local/lib/
+
+COPY --from=builder \
+	/usr/local/lib/libfastrtps.so* \
+	/usr/local/lib/
+
+
+
+################################################################################
+FROM dev AS example-builder
+
+ARG TAG_FASTRTPS
+ARG NPROC
+
+RUN git clone \
+		--branch ${TAG_FASTRTPS} \
+		https://github.com/eProsima/Fast-RTPS.git && \
+	mkdir Fast-RTPS/build && \
+	cd Fast-RTPS/build && \
+	cmake .. \
+		-DCOMPILE_EXAMPLES=ON \
+		-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE && \
+	cmake --build . \
+		--target install \
+		-j ${NPROC}
+
+
+################################################################################
 FROM runtime AS example
 
 COPY --from=example-builder \
