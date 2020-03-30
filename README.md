@@ -155,7 +155,7 @@ The examples image bases in the runtime image and comprises the examples which e
 
 ### generate code from IDL files?
 
-go to [How to generate code from IDL files?](examples/idlCodeGen/README.md)
+go to [How to generate code from IDL files?](examples/idlCodeGen/)
 
 ### to use the development image to build only.
 
