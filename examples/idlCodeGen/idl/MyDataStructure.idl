@@ -1,0 +1,6 @@
+struct MyDataStructure
+{
+	string a_string_value;
+	double a_double_value;
+	long a_long_value;
+};

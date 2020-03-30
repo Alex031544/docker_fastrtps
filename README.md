@@ -155,7 +155,9 @@ The examples image bases in the runtime image and comprises the examples which e
 
 ### generate code from IDL files?
 
-### to use the development image to build only. 
+go to [How to generate code from IDL files?](examples/idlCodeGen/README.md)
+
+### to use the development image to build only.
 
 ### run the examples shipped with ePraosimas FastRTPS?
 
