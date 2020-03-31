@@ -2,8 +2,7 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/stars/count/)
 [![Docker pulls](https://img.shields.io/docker/pulls/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/)
-[![Docker Automated build](https://img.shields.io/docker/automated/alex031544/fastrtps.svg?style=plastic)](https://github.com/alex031544/fastrtps/)
-[![Docker Build Status](https://img.shields.io/docker/build/alex031544/fastrtps.svg?style=plastic)](https://github.com/alex031544/fastrtps/)
+
 
 Below are the following sections:
 
@@ -153,9 +152,11 @@ The examples image based on the runtime image and comprises the examples which e
 
 ### perform a multistage build?
 
+go to [How to perform a multistage build??](https://github.com/Alex031544/docker_fastrtps/tree/master/examples/multiStageBuild/)
+
 ### generate code from IDL files?
 
-go to [How to generate code from IDL files?](examples/idlCodeGen/)
+go to [How to generate code from IDL files?](https://github.com/Alex031544/docker_fastrtps/tree/master/examples/idlCodeGen/)
 
 ### to use the development image to build only.
 
