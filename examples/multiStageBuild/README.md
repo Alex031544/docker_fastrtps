@@ -31,7 +31,7 @@ Now let's have a look at the Dockerfile. A `FROM <image/stage> AS <new stage>` l
    		--target install \
    		-j 16
    ```
-   In this stage is to translate the source code into an application. For this, we use the development image (`alex031544/fastrtps:latest-dev`). With `COPY` we copy the code from the host computer into the image directory */opt/HelloWorldExample/*. With `WORKDIR` we create (because it does not exist jet) and jump into the image directory */opt/build/*, where to store build output. Finally, we call CMake with `RUN`.  Since the application should run inside a container of the same structure, CMake shall not strip the `RPATH` from the application. Otherwise, the application can not find the shared libraries later. We tell CMake this by using the `-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE` option at the configuration call. The second CMake call is the build and installation execution.
+   This stage is to translate the source code into an application. For this, we use the development image (`alex031544/fastrtps:latest-dev`). With `COPY` we copy the code from the host computer into the image directory */opt/HelloWorldExample/*. With `WORKDIR` we create (because it does not exist jet) and jump into the image directory */opt/build/*, where to store build output. Finally, we call CMake with `RUN`.  Since the application should run inside a container of the same structure, CMake shall not strip the `RPATH` from the application. Otherwise, the application can not find the shared libraries later. We tell CMake this by using the `-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE` option at the configuration call. The second CMake call is the build and installation execution.
 
 2. The intermediate __runtime__ stage.
    ```
