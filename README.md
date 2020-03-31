@@ -80,7 +80,7 @@ As the path to *fastrtpsgen* is set in `PATH`, `fastrtpsgen` can directly be use
 
 ### Examples image
 
-The examples image bases in the runtime image and comprises the examples which eProsima ships together with FastRTPS. As the binaries are built in a development container, this is a good demonstration how to do it and that all should work well. The examples are installed to:
+The examples image based on the runtime image and comprises the examples which eProsima ships together with FastRTPS. As the binaries are built in a development container, this is a good demonstration how to do it and that all should work well. The examples are installed to:
 
 ```
 /usr/local/examples/C++/
