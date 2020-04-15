@@ -5,9 +5,9 @@
 ################################################################################
 
 ARG TAG_DEBIAN='10-slim'
-ARG TAG_FASTRTPS='v1.9.4'
+ARG TAG_FASTRTPS='v1.10.0'
 ARG TAG_FASTCDR='v1.0.13'
-ARG TAG_FASTRTPSGEN='v1.0.3'
+ARG TAG_FASTRTPSGEN='v1.0.4'
 ARG TAG_FOONATHAN='v0.5.0'
 ARG NPROC=16
 
@@ -25,7 +25,7 @@ RUN mkdir -p /usr/share/man/man1 && \
 		python3-pip  \
 		git \
 		gcc g++ cmake \
-		gradle && \
+		ant groovy default-jre-headless && \
 	pip3 install -U colcon-common-extensions vcstool
 
 
@@ -97,7 +97,7 @@ RUN git clone \
 		--recursive \
 		https://github.com/eProsima/Fast-RTPS-Gen.git && \
 	cd Fast-RTPS-Gen && \
-	gradle assemble && \
+	./gradlew assemble && \
 	mkdir /usr/local/share/fastrtpsgen/ && \
 	mv scripts/ /usr/local/share/fastrtpsgen/ && \
 	mv share/ /usr/local/share/fastrtpsgen/

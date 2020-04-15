@@ -1,6 +1,6 @@
 #/bin/bash
 
-TAG_FASTRTPS='v1.9.4'
+TAG_FASTRTPS='v1.10.0'
 
 docker build \
 	--rm \
@@ -23,9 +23,3 @@ docker build \
 	-f Dockerfile \
 	.
 
-docker build \
-	--rm \
-	--build-arg TAG_FASTRTPS=${TAG_FASTRTPS} \
-	-t fastrtps:${TAG_FASTRTPS}-idl-demo \
-	-f Dockerfile.idl-demo \
-	.
