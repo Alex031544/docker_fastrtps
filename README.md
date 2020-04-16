@@ -1,17 +1,21 @@
 # FastRTPS Docker implementation
 
-[![Docker Stars](https://img.shields.io/docker/stars/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/stars/count/)
+[![Image version information][ver_img_v1.10.0]](https://microbadger.com/images/alex031544/fastrtps)
 [![Docker pulls](https://img.shields.io/docker/pulls/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/)
+[![Docker Stars](https://img.shields.io/docker/stars/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/stars/count/)
+[![Runtime Image Size information](https://img.shields.io/docker/image-size/alex031544/fastrtps/latest) for Runtime](https://microbadger.com/images/alex031544/fastrtps)
+[![Image Size information](https://img.shields.io/docker/image-size/alex031544/fastrtps/latest-dev) for Development](https://microbadger.com/images/alex031544/fastrtps)
 
 
 Below are the following sections:
 
-1. __Image Overview__ - A brief overview of the images provided
+1. __Brief Image Overview__ - A brief overview of the images provided
 2. __The images in detail__ - The next section describes this images more detailed.
 3. __How To__ - This section demonstrates some use cases.
+4. __Tag/Version Overview__ - Provides a full overview of the images provided and their related versions.
 
 
-## Image Overview
+## Brief Image Overview
 
 Provided are 3 images, which are differently tagged:
 
@@ -215,6 +219,84 @@ Message: HelloWorld with index: 9 SENT
 Message: HelloWorld with index: 10 SENT
 ```
 
+## Tag/Version overview
+
+| Runtime Images                                                                 | Development Images                                                                         | Example Images                                                                                         | Base OS                               | [FastRTPS][fastrtps_git_lnk]    | [FastCDR][fastcdr_git_lnk]     | [FastRTPSGen][fastrtpsgen_git_lnk] |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------- | ------------------------------ | ---------------------------------- |
+| [![][ver_img_latest]]() [![][size_img_latest]]() [![][layers_img_latest]]()    | [![][ver_img_latest-dev]]() [![][size_img_latest-dev]]() [![][layers_img_latest-dev]]()    | [![][ver_img_latest-example]]() [![][size_img_latest-example]]() [![][layers_img_latest-example]]()    | [![][os_ver_deb_10-slim]][os_hub_deb] | [v1.10.0][fastrtps_git_v1.10.0] | [v1.0.13][fastcdr_git_v1.0.13] | [v1.0.4][fastrtpsgen_git_v1.0.4]   |
+| [![][ver_img_v1.10.0]]() [![][size_img_v1.10.0]]() [![][layers_img_v1.10.0]]() | [![][ver_img_v1.10.0-dev]]() [![][size_img_v1.10.0-dev]]() [![][layers_img_v1.10.0-dev]]() | [![][ver_img_v1.10.0-example]]() [![][size_img_v1.10.0-example]]() [![][layers_img_v1.10.0-example]]() | [![][os_ver_deb_10-slim]][os_hub_deb] | [v1.10.0][fastrtps_git_v1.10.0] | [v1.0.13][fastcdr_git_v1.0.13] | [v1.0.4][fastrtpsgen_git_v1.0.4]   |
+| [![][ver_img_v1.9.4]]() [![][size_img_v1.9.4]]() [![][layers_img_v1.9.4]]()    | [![][ver_img_v1.9.4-dev]]() [![][size_img_v1.9.4-dev]]() [![][layers_img_v1.9.4-dev]]()    | [![][ver_img_v1.9.4-example]]() [![][size_img_v1.9.4-example]]() [![][layers_img_v1.9.4-example]]()    | [![][os_ver_deb_10-slim]][os_hub_deb] | [v1.9.4][fastrtps_git_v1.9.4]   | [v1.0.13][fastcdr_git_v1.0.13] | [v1.0.3][fastrtpsgen_git_v1.0.3]   |
+
+
+[ver_img_latest]: https://images.microbadger.com/badges/version/alex031544/fastrtps:latest.svg
+[size_img_latest]: https://img.shields.io/docker/image-size/alex031544/fastrtps/latest
+[layers_img_latest]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/latest
+
+[ver_img_latest-dev]: https://images.microbadger.com/badges/version/alex031544/fastrtps:latest-dev.svg
+[size_img_latest-dev]: https://img.shields.io/docker/image-size/alex031544/fastrtps/latest-dev
+[layers_img_latest-dev]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/latest-dev
+
+[ver_img_latest-example]: https://images.microbadger.com/badges/version/alex031544/fastrtps:latest-example.svg
+[size_img_latest-example]: https://img.shields.io/docker/image-size/alex031544/fastrtps/latest-example
+[layers_img_latest-example]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/latest-example
+
+[ver_img_v1.10.0]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.10.0.svg
+[size_img_v1.10.0]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.10.0
+[layers_img_v1.10.0]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v1.10.0
+
+[ver_img_v1.10.0-dev]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.10.0-dev.svg
+[size_img_v1.10.0-dev]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.10.0-dev
+[layers_img_v1.10.0-dev]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v1.10.0-dev
+
+[ver_img_v1.10.0-example]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.10.0-example.svg
+[size_img_v1.10.0-example]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.10.0-example
+[layers_img_v1.10.0-example]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v1.10.0-example
+
+[ver_img_v1.9.4]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.9.4.svg
+[size_img_v1.9.4]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.9.4
+[layers_img_v1.9.4]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v1.9.4
+
+[ver_img_v1.9.4-dev]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.9.4-dev.svg
+[size_img_v1.9.4-dev]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.9.4-dev
+[layers_img_v1.9.4-dev]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v1.9.4-dev
+
+[ver_img_v1.9.4-example]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.9.4-example.svg
+[size_img_v1.9.4-example]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.9.4-example
+[layers_img_v1.9.4-example]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v1.9.4-example
+
+
+[os_hub_deb]: https://hub.docker.com/_/debian
+[os_ver_deb_10-slim]: https://images.microbadger.com/badges/version/debian:10-slim.svg
+
+[fastrtps_git_lnk]: https://github.com/eProsima/Fast-RTPS
+[fastrtps_git_v1.9.4]: https://github.com/eProsima/Fast-RTPS/releases/tag/v1.9.4
+[fastrtps_git_v1.10.0]: https://github.com/eProsima/Fast-RTPS/releases/tag/v1.10.0
+
+[fastcdr_git_lnk]: https://github.com/eProsima/Fast-CDR
+[fastcdr_git_v1.0.13]: https://github.com/eProsima/Fast-CDR/releases/tag/v1.0.13
+
+[fastrtpsgen_git_lnk]: https://github.com/eProsima/Fast-RTPS-Gen
+[fastrtpsgen_git_v1.0.3]: https://github.com/eProsima/Fast-RTPS-Gen/releases/tag/v1.0.3
+[fastrtpsgen_git_v1.0.4]: https://github.com/eProsima/Fast-RTPS-Gen/releases/tag/v1.0.4
+
+
 ## References
 
 [see for further information](https://gitlab.com/Alex0315/code-examples/-/tree/master/FastRTPS/01_docker)
+
+
+## Contributions
+
+I highly appreciate any contributions to this project. As a short summary here is what you could do:
+
+- Improvements on documentation
+- File issues against the project
+- Open pull requests, for example
+  - add new version configurations
+  - add more examples
+
+
+## License
+
+Any directly written content in this repository is licensed under the *Apache-2.0*.
+Software parts that are produced during the image build and resulting docker images are of course a composition of components that probably carry their own licenses.
