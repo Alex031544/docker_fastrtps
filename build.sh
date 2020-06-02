@@ -65,3 +65,17 @@ if [ "$?" -ne 0 ];then
 	exit 4
 fi
 
+echo "Image geneneration succesfully."
+read -p "Do you want to tag and push changes to git [yes/NO]: " choice
+choice=${choice:-NO}
+choice=${choice,,}
+
+if [ "${choice}" == "yes" ]; then
+	git add Dockerfile dockerhub/* README.md && \
+	git commit -m "upgrade to FastRTPS ${TAG_FASTRTPS}" && \
+	git tag ${TAG_FASTRTPS} && \
+	git tag latest -f && \
+	git push && \
+	git push --tags -f
+fi
+
