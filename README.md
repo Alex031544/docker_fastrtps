@@ -1,6 +1,6 @@
 # FastRTPS Docker implementation
 
-[![Image version information][ver_img_v1.10.0]](https://microbadger.com/images/alex031544/fastrtps)
+[![Image version information][ver_img_v2.0.0]](https://microbadger.com/images/alex031544/fastrtps)
 [![Docker pulls](https://img.shields.io/docker/pulls/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/)
 [![Docker Stars](https://img.shields.io/docker/stars/alex031544/fastrtps.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/alex031544/fastrtps/stars/count/)
 [![Runtime Image Size information](https://img.shields.io/docker/image-size/alex031544/fastrtps/latest) for Runtime](https://microbadger.com/images/alex031544/fastrtps)
@@ -223,7 +223,8 @@ Message: HelloWorld with index: 10 SENT
 
 | Runtime Images                                                                 | Development Images                                                                         | Example Images                                                                                         | Base OS                               | [FastRTPS][fastrtps_git_lnk]    | [FastCDR][fastcdr_git_lnk]     | [FastRTPSGen][fastrtpsgen_git_lnk] |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------- | ------------------------------ | ---------------------------------- |
-| [![][ver_img_latest]]() [![][size_img_latest]]() [![][layers_img_latest]]()    | [![][ver_img_latest-dev]]() [![][size_img_latest-dev]]() [![][layers_img_latest-dev]]()    | [![][ver_img_latest-example]]() [![][size_img_latest-example]]() [![][layers_img_latest-example]]()    | [Debian 10-slim][os_hub_deb] | [v1.10.0][fastrtps_git_v1.10.0] | [v1.0.13][fastcdr_git_v1.0.13] | [v1.0.4][fastrtpsgen_git_v1.0.4]   |
+| [![][ver_img_latest]]() [![][size_img_latest]]() [![][layers_img_latest]]()    | [![][ver_img_latest-dev]]() [![][size_img_latest-dev]]() [![][layers_img_latest-dev]]()    | [![][ver_img_latest-example]]() [![][size_img_latest-example]]() [![][layers_img_latest-example]]()    | [Debian 10-slim][os_hub_deb] | [v2.0.0][fastrtps_git_v2.0.0] | [v1.0.14][fastcdr_git_v1.0.14] | [v1.0.4][fastrtpsgen_git_v1.0.4]   |
+| [![][ver_img_v2.0.0]]() [![][size_img_v2.0.0]]() [![][layers_img_v2.0.0]]() | [![][ver_img_v2.0.0-dev]]() [![][size_img_v2.0.0-dev]]() [![][layers_img_v2.0.0-dev]]() | [![][ver_img_v2.0.0-example]]() [![][size_img_v2.0.0-example]]() [![][layers_img_v2.0.0-example]]() | [Debian 10-slim][os_hub_deb] | [v2.0.0][fastrtps_git_v2.0.0] | [v1.0.14][fastcdr_git_v1.0.14] | [v1.0.4][fastrtpsgen_git_v1.0.4]   |
 | [![][ver_img_v1.10.0]]() [![][size_img_v1.10.0]]() [![][layers_img_v1.10.0]]() | [![][ver_img_v1.10.0-dev]]() [![][size_img_v1.10.0-dev]]() [![][layers_img_v1.10.0-dev]]() | [![][ver_img_v1.10.0-example]]() [![][size_img_v1.10.0-example]]() [![][layers_img_v1.10.0-example]]() | [Debian 10-slim][os_hub_deb] | [v1.10.0][fastrtps_git_v1.10.0] | [v1.0.13][fastcdr_git_v1.0.13] | [v1.0.4][fastrtpsgen_git_v1.0.4]   |
 | [![][ver_img_v1.9.4]]() [![][size_img_v1.9.4]]() [![][layers_img_v1.9.4]]()    | [![][ver_img_v1.9.4-dev]]() [![][size_img_v1.9.4-dev]]() [![][layers_img_v1.9.4-dev]]()    | [![][ver_img_v1.9.4-example]]() [![][size_img_v1.9.4-example]]() [![][layers_img_v1.9.4-example]]()    | [Debian 10-slim][os_hub_deb] | [v1.9.4][fastrtps_git_v1.9.4]   | [v1.0.13][fastcdr_git_v1.0.13] | [v1.0.3][fastrtpsgen_git_v1.0.3]   |
 
@@ -239,6 +240,18 @@ Message: HelloWorld with index: 10 SENT
 [ver_img_latest-example]: https://images.microbadger.com/badges/version/alex031544/fastrtps:latest-example.svg
 [size_img_latest-example]: https://img.shields.io/docker/image-size/alex031544/fastrtps/latest-example
 [layers_img_latest-example]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/latest-example
+
+[ver_img_v2.0.0]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v2.0.0.svg
+[size_img_v2.0.0]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v2.0.0
+[layers_img_v2.0.0]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v2.0.0
+
+[ver_img_v2.0.0-dev]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v2.0.0-dev.svg
+[size_img_v2.0.0-dev]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v2.0.0-dev
+[layers_img_v2.0.0-dev]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v2.0.0-dev
+
+[ver_img_v2.0.0-example]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v2.0.0-example.svg
+[size_img_v2.0.0-example]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v2.0.0-example
+[layers_img_v2.0.0-example]: https://img.shields.io/microbadger/layers/alex031544/fastrtps/v2.0.0-example
 
 [ver_img_v1.10.0]: https://images.microbadger.com/badges/version/alex031544/fastrtps:v1.10.0.svg
 [size_img_v1.10.0]: https://img.shields.io/docker/image-size/alex031544/fastrtps/v1.10.0
@@ -271,9 +284,11 @@ Message: HelloWorld with index: 10 SENT
 [fastrtps_git_lnk]: https://github.com/eProsima/Fast-RTPS
 [fastrtps_git_v1.9.4]: https://github.com/eProsima/Fast-RTPS/releases/tag/v1.9.4
 [fastrtps_git_v1.10.0]: https://github.com/eProsima/Fast-RTPS/releases/tag/v1.10.0
+[fastrtps_git_v2.0.0]: https://github.com/eProsima/Fast-RTPS/releases/tag/v2.0.0
 
 [fastcdr_git_lnk]: https://github.com/eProsima/Fast-CDR
 [fastcdr_git_v1.0.13]: https://github.com/eProsima/Fast-CDR/releases/tag/v1.0.13
+[fastcdr_git_v1.0.14]: https://github.com/eProsima/Fast-CDR/releases/tag/v1.0.14
 
 [fastrtpsgen_git_lnk]: https://github.com/eProsima/Fast-RTPS-Gen
 [fastrtpsgen_git_v1.0.3]: https://github.com/eProsima/Fast-RTPS-Gen/releases/tag/v1.0.3
