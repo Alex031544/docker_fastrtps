@@ -33,6 +33,9 @@ dockerfileLines = map(lambda l: l.rstrip(), dockerfileLines)
 head = []
 buildTarget = BuildTarget(None, None)
 for line in dockerfileLines:
+    if 'NPROC' in line:
+        line = line.split('=')[0] + '=1'
+
     if '###' in line:
         break
     head.append(line)

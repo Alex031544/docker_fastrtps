@@ -9,7 +9,7 @@ ARG TAG_FASTRTPS='v2.0.0'
 ARG TAG_FASTCDR='v1.0.14'
 ARG TAG_FASTRTPSGEN='v1.0.4'
 ARG TAG_FOONATHAN='v1.0.0'
-ARG NPROC=16
+ARG NPROC=1
 
 
 ################################################################################
