@@ -72,16 +72,16 @@ choice=${choice:-NO}
 choice=${choice,,}
 
 if [ "${choice}" == "yes" ]; then
-	echo "> git add Dockerfile dockerhub/* README.md gen_dockerfiles_for_docker_hub.py" && \
-	git add Dockerfile dockerhub/* README.md gen_dockerfiles_for_docker_hub.py && \
-	echo '> git commit -m "upgrade to FastRTPS ${TAG_FASTRTPS}"' && \
-	git commit -m "upgrade to FastRTPS ${TAG_FASTRTPS}" && \
-	echo "> git tag ${TAG_FASTRTPS} -f" && \
-	git tag ${TAG_FASTRTPS} -f && \
-	echo "> git tag latest -f" && \
-	git tag latest -f && \
-	echo "> git push" && \
+	echo "> git add Dockerfile dockerhub/* README.md gen_dockerfiles_for_docker_hub.py"
+	git add Dockerfile dockerhub/* README.md gen_dockerfiles_for_docker_hub.py
+	echo '> git commit -m "upgrade to FastRTPS ${TAG_FASTRTPS}"'
+	git commit -m "upgrade to FastRTPS ${TAG_FASTRTPS}"
+	echo "> git tag ${TAG_FASTRTPS} -f"
+	git tag ${TAG_FASTRTPS} -f
+	echo "> git tag latest -f"
+	git tag latest -f
+	echo "> git push"
 	git push
-	echo "> git push --tags -f" && \
+	echo "> git push --tags -f"
 	git push --tags -f
 fi
