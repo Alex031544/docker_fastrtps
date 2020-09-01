@@ -1,6 +1,6 @@
 #/bin/bash
 
-TAG_FASTRTPS='v2.0.0'
+TAG_FASTRTPS='v2.0.1'
 
 task () {
 	echo ""
