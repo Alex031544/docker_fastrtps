@@ -298,10 +298,12 @@ Message: HelloWorld with index: 10 SENT
 [fastrtps_git_v1.9.4]: https://github.com/eProsima/Fast-RTPS/releases/tag/v1.9.4
 [fastrtps_git_v1.10.0]: https://github.com/eProsima/Fast-RTPS/releases/tag/v1.10.0
 [fastrtps_git_v2.0.0]: https://github.com/eProsima/Fast-RTPS/releases/tag/v2.0.0
+[fastrtps_git_v2.0.1]: https://github.com/eProsima/Fast-RTPS/releases/tag/v2.0.1
 
 [fastcdr_git_lnk]: https://github.com/eProsima/Fast-CDR
 [fastcdr_git_v1.0.13]: https://github.com/eProsima/Fast-CDR/releases/tag/v1.0.13
 [fastcdr_git_v1.0.14]: https://github.com/eProsima/Fast-CDR/releases/tag/v1.0.14
+[fastcdr_git_v1.0.15]: https://github.com/eProsima/Fast-CDR/releases/tag/v1.0.15
 
 [fastrtpsgen_git_lnk]: https://github.com/eProsima/Fast-RTPS-Gen
 [fastrtpsgen_git_v1.0.3]: https://github.com/eProsima/Fast-RTPS-Gen/releases/tag/v1.0.3
