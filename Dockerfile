@@ -159,6 +159,10 @@ COPY --from=builder \
 	/usr/local/include/fastrtps
 
 COPY --from=builder \
+	/usr/local/include/fastdds \
+	/usr/local/include/fastdds
+
+COPY --from=builder \
 	/usr/local/lib/libfastrtps.so* \
 	/usr/local/lib/
 
